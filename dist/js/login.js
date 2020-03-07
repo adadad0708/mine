@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#submit").validate({rules:{username:"required",password:{required:!0,minlength:3,maxlength:12}},messages:{username:"请输入用户名",password:{required:"请输入您的密码",minlength:"符合3~12位"}},submitHandler:function(e){$.post("/login",$(e).serialize(),function(e){console.log(e)})}})});
